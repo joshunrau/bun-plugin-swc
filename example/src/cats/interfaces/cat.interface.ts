@@ -1,3 +1,3 @@
-export interface Cat {
+export type Cat = {
   name: string;
 }

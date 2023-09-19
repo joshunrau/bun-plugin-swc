@@ -7,6 +7,7 @@
   "scripts": {
     "build": "bun scripts/build.ts",
     "dev": "bun --watch src/main.ts",
+    "lint": "eslint --fix src",
     "start": "bun dist/main.js"
   },
   "dependencies": {
