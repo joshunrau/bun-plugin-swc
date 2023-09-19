@@ -12,14 +12,18 @@
   "dependencies": {
     "@nestjs/common": "^10.2.5",
     "@nestjs/core": "^10.2.5",
+    "@nestjs/platform-express": "^10.2.5",
     "class-transformer": "^0.5.1",
     "class-validator": "^0.14.0",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.8.1"
   },
   "devDependencies": {
+    "@nestjs/testing": "^10.2.5",
+    "@types/supertest": "^2.0.12",
     "bun-plugin-swc": "link:bun-plugin-swc",
     "bun-types": "^1.0.2",
+    "supertest": "^6.3.3",
     "typescript": "^5.2.2"
   }
 }
