@@ -5,6 +5,8 @@
     "allowSyntheticDefaultImports": true,
     "composite": true,
     "downlevelIteration": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
     "forceConsistentCasingInFileNames": true,
     "lib": ["ESNext"],
     "module": "ESNext",
