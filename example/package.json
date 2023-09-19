@@ -5,7 +5,8 @@
   "author": "Joshua Unrau",
   "type": "module",
   "scripts": {
-    "build": "bun build.ts"
+    "build": "bun build.ts",
+    "start": "bun dist/main.js"
   },
   "dependencies": {
     "@nestjs/common": "^10.2.5",
