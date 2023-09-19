@@ -1,7 +1,7 @@
 import swc from '@swc/core';
 import { type BunPlugin } from 'bun';
 
-const plugin: BunPlugin = {
+const swcPlugin = (): BunPlugin => ({
   name: 'bun-plugin-swc',
   setup: (build) => {
     build.onLoad({ filter: /\.ts$/ }, async (args) => {
@@ -30,6 +30,6 @@ const plugin: BunPlugin = {
       };
     });
   }
-};
+});
 
-export default plugin;
+export default swcPlugin;
