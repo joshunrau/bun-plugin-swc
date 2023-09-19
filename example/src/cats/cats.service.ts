@@ -8,6 +8,7 @@ export class CatsService {
 
   create(cat: Cat) {
     this.cats.push(cat);
+    return cat;
   }
 
   findAll() {
