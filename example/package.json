@@ -5,7 +5,8 @@
   "author": "Joshua Unrau",
   "type": "module",
   "scripts": {
-    "build": "bun build.ts",
+    "build": "bun scripts/build.ts",
+    "dev": "bun --watch src/main.ts",
     "start": "bun dist/main.js"
   },
   "dependencies": {
