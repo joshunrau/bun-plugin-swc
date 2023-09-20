@@ -1,5 +1,6 @@
-import { type Options as SwcOptions } from '@swc/core';
+import { type Options as SwcOptions, transformFile } from '@swc/core';
 import { type BunPlugin } from 'bun';
+import { merge } from 'lodash';
 
 type SwcPluginOptions = {
   swc?: SwcOptions;
@@ -7,14 +8,11 @@ type SwcPluginOptions = {
 
 const swcPlugin = (options?: SwcPluginOptions): BunPlugin => ({
   name: 'bun-plugin-swc',
-  setup: async (build) => {
-    const { transformFile } = await import('@swc/core');
-    const _ = await import('lodash');
-
+  setup: (build) => {
     build.onLoad({ filter: /\.ts$/ }, async (args) => {
       const output = await transformFile(
         args.path,
-        _.merge(options?.swc, {
+        merge(options?.swc, {
           jsc: {
             keepClassNames: true,
             parser: {
