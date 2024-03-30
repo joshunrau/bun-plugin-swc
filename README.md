@@ -1,3 +1,5 @@
+> :warning:&nbsp; This package is deprecated and no longer maintained, since Bun now supports `emitDecoratorMetadata`. 
+
 # bun-plugin-swc
 
 A Bun plugin for transpiling TypeScript with SWC (Speedy Web Compiler).
